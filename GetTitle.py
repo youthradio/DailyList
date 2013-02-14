@@ -1,10 +1,10 @@
-from HTMLParser import HTMLParser
+from HTMLParser import HTMLParser, HTMLParseError
 import urllib2
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
-      if tag == "title":
+        if tag == "title":
         	print "Encountered a start tag:", tag
 
     def handle_endtag(self, tag):
@@ -16,9 +16,14 @@ class MyHTMLParser(HTMLParser):
         	print "Encountered some data  :", data
 
 
-response = urllib2.urlopen('http://techcrunch.com/2013/02/07/video-of-3d-printed-gun-magazine-shows-off-deadly-high-capacity-wiki-weapon/')
+response = urllib2.urlopen('http://thecnnfreedomproject.blogs.cnn.com/2013/02/12/bras-offers-lifeline-to-rescued-slaves/?hpt=hp_c2')
 html = response.read()
 
 # instantiate the parser and fed it some HTML
 parser = MyHTMLParser()
-parser.feed(html)
+
+try:
+	parser.feed(html)
+except HTMLParseError, e:
+	# raise e
+	print ""
