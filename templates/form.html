@@ -12,12 +12,15 @@ height: 50px;}
 strong{
     color:#3399FF;}
     
-h1 {
+h1,h2 {
     text-align:center;}
     
 body { 
+  position:relative;
+top:10px;
+right:-150px;
 width:500px;
-padding:10px;
+padding:20px;
 border:5px solid gray;
 margin:10px;}
 
@@ -26,7 +29,7 @@ margin:10px;}
 </head>
 <body>
 <h1>Rebecca's Daily List </h1>
-
+<h2> March 3rd </h2>
 <div id="blue">
 <strong>In the News</strong></div>
 
@@ -52,7 +55,7 @@ margin:10px;}
           </div>
  <p> </p>  
 <strong>All Day Play</strong>
-Today's shows:
+<p>Today's shows: </p>
         <div id="long">
         <textarea rows="2" cols="58" name="adp"> </textarea>
  </div>
@@ -64,10 +67,12 @@ Today's shows:
 
               
           </div>
+<p> </p>
 
-<strong>Assignments</strong>
+<strong>In Production</strong>
+<p> </p>
         <input type="text" name="story" placeholder="Slug"/>
-          <input type="text" name="date" placeholder="Due" />
+          <input type="text" name="date" placeholder="Due Date" />
         <select name="staff">
             <option value="staff">Staff</option>
             <option value="Asha">Asha</option>

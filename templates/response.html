@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Rebecca's Daily List Response</title>
+<title>Rebecca's Daily List Sent!</title>
 
 <style type="text/css">
 p { 
@@ -9,7 +9,7 @@ font-weight:bold;
   color:#3399FF;}
 
     
-h1 {
+h1,h2 {
     text-align:center;}
     
 body { 
@@ -24,6 +24,7 @@ margin:10px;}
 
 <body> 
 <h1> Rebecca's Daily List </h1> 
+<h2> The email below was sent </h2>
 
 <p> In The News News</p> {{ request.form['news'] }} 
 
@@ -34,7 +35,7 @@ margin:10px;}
 <p> ADP </p> {{ request.form['adp'] }}
 <p> Social Media- Facebook Twitter:</p> {{ request.form['sm'] }}
 
-<p> Assignments</p>
+<p> IN PRODUCTION</p>
 <table>
 	<tr>
 		<td> Slug</td>
@@ -46,8 +47,8 @@ margin:10px;}
 	<tr> 
 	 <td> {{ request.form['story'] }}</td>
 	 <td> {{ request.form['date'] }}</td>
-	 <td>  {{ request.form['staff'] }}</td>
-	 <td>   {{ request.form['outlets'] }}</td>
+	 <td> {{ request.form['staff'] }}</td>
+	 <td> {{ request.form['outlets'] }}</td>
 	</tr>
 </table> 
 
