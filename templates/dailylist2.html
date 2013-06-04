@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+	<tile>
+	</title>
+
+
+</head> 
+<body style="background-color:#E8E8E8;padding:3px">
+
+<table  bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:3px" width="528"  >
+	<tr>
+		<td rowspan="2"> <img src="http://i1343.photobucket.com/albums/o790/ashalaura/reb2_zpsf2939269.jpg"> </td>
+		<td width="403"> <h2>Rebecca's Daily List</h2></td>
+	<tr>
+		<td width="403">Today's Date </td> 		
+	</tr>
+
+</table>
+
+<table  style="background-color:#FFFFFF; border:1px solid #E8E8E8;border-collapse:collapse;" width="528" >
+<tr>
+	<td valign="top" width = "35%" style="border:4px solid #E8E8E8;padding:3px;"> 
+		<img src="http://i1343.photobucket.com/albums/o790/ashalaura/Announcements_zpsd6af3034.png" width="100%">
+		<br> {{ request.form['ann'] }} 
+		<img src="http://i1343.photobucket.com/albums/o790/ashalaura/News_zps5abdbfb5.png" width="100%">
+		<br> {{ request.form['news'] }} 
+	</td> 
+
+	<td valign="top" width = "65%" style="border:4px solid #E8E8E8;padding:6px;">
+	<strong> Youth Radio </strong> 
+	<BR> {{ request.form['yr'] }} 
+	<br> <strong> All Day Play </strong> 
+	<br> {{ request.form['adp'] }} 
+	<br> <strong> Turnstyle </strong> 
+	<br> {{ request.form['tn'] }} 
+	<br> <strong> Social Media </strong> 
+		<br> {{ request.form['sm'] }} 
+	 </td>
+</tr>
+ 
+<tr>
+<table bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:4px" width="450">
+	 <tr> <td> <strong>In Production</strong> </td> </tr>
+	<tr>
+		<td> Name </td>
+		<td> Due </td>
+		<td> Status </td>
+		<td> Outlet </td> 
+	</tr>
+	<tr> 
+	 <td> {{ request.form['story'] }}</td>
+	 <td> {{ request.form['date'] }}</td>
+	 <td> {{ request.form['staff'] }}</td>
+	 <td> {{ request.form['outlets'] }}</td>
+	</tr>
+</table> 
+	</tr>
+
+</table> 
+</table>
+
+</body>
+
+</html>
+
+
+
+

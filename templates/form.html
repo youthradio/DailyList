@@ -1,100 +1,90 @@
 <!doctype html>
-<html>
 <head>
-<title>Rebecca's Daily List</title>
+  <tile>
+  </title>
 
-<style type="text/css">
-#long input{
-border:solid 1px #aacfe4;
-width:486px;
-height: 50px;}
 
-strong{
-    color:#3399FF;}
-    
-h1,h2 {
-    text-align:center;}
-    
-body { 
-  position:relative;
-top:10px;
-right:-150px;
-width:500px;
-padding:20px;
-border:5px solid gray;
-margin:10px;}
+</head> 
+<body style="background-color:#E8E8E8;padding:3px">
 
-      
-</style type>
-</head>
-<body>
-<h1>Rebecca's Daily List </h1>
-<h2> March 3rd </h2>
-<div id="blue">
-<strong>In the News</strong></div>
+<table  bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:3px" width="528"  >
+  <tr>
+    <td rowspan="2"> <img src="http://i1343.photobucket.com/albums/o790/ashalaura/reb2_zpsf2939269.jpg"> </td>
+    <td width="403"> <h2>Rebecca's Daily List</h2></td>
+  <tr>
+    <td width="403">Today's Date </td>    
+  </tr>
 
-<form action="/submit" method="post">
-   <input type="text" name="news" style="width:436;border:solid 1px #aacfe4; " /> <input type="button" value="add"/>
+</table>
 
- <p> </p>  
-<strong>Announcements and Staffing</strong>
-  <div id="long"> 
-  <textarea rows="3" cols="58" name="ann"></textarea>
-      
-  </div>
-    <p> </p>   
-        
-<strong>YouthRadio.org </strong>
-       <div id="long"> 
-         <textarea rows="3" cols="58" name="yr"></textarea>
-       </div>
- <p> </p>  
-<strong>Turnstyle News</strong>
-          <div id="long">
-        <textarea rows="3" cols="58" name="tn"></textarea> 
-          </div>
- <p> </p>  
-<strong>All Day Play</strong>
-<p>Today's shows: </p>
-        <div id="long">
-        <textarea rows="2" cols="58" name="adp"> </textarea>
- </div>
- <p> </p>  
- 
-<strong>FB & Twitter</strong>
-          <div id="long">
-        <textarea rows="3" cols="58" name="SM"></textarea>
+<table  style="background-color:#FFFFFF; border:1px solid #E8E8E8;border-collapse:collapse;" width="528"  >
+  <form action="/submit" method="post">
+<tr>
+  <td valign="top" width = "35%" style="border:4px solid #E8E8E8;padding:3px;"> 
 
-              
-          </div>
-<p> </p>
+    <img src="http://i1343.photobucket.com/albums/o790/ashalaura/Announcements_zpsd6af3034.png" width="100%">
+    <br> <textarea rows="3"  id="ann"></textarea> 
+    <img src="http://i1343.photobucket.com/albums/o790/ashalaura/News_zps5abdbfb5.png" width="100%">
+    <br> <input type="text" id="news" style="width:436;border:solid 1px #aacfe4; " /> <input type="button" value="add"/>
+  </td> 
 
-<strong>In Production</strong>
-<p> </p>
-        <input type="text" name="story" placeholder="Slug"/>
-          <input type="text" name="date" placeholder="Due Date" />
-        <select name="staff">
+  <td valign="top" width = "65%" style="border:4px solid #E8E8E8;padding:6px;">
+ <strong> Youth Radio </strong> 
+  <BR> <textarea rows="3" cols="32" id="yr"></textarea>
+  <br> <strong> All Day Play </strong> 
+  <br> <textarea rows="2"  cols="32" id="adp"> </textarea>
+  <br> <strong> Turnstyle News </strong> 
+  <br> <textarea rows="3" cols="32" id="tn"></textarea> 
+  <br> <strong> Social Media </strong> 
+    <br> <textarea rows="3" cols="32" id="SM"></textarea>
+
+   </td>
+</tr>
+
+<table bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:3px" width="450"> 
+  <tr width="450">
+  <td> <strong>In Production</strong> </td>
+</tr>
+
+  <td> <input type="text" id="story" placeholder="Slug"/> </td>
+   <td>  <input type="text" id="date"  placeholder="Due Date" size="6"/> </td>
+    <td> <select id="staff">
             <option value="staff">Staff</option>
             <option value="Asha">Asha</option>
             <option value="Lisa" >Lissa</option>
             <option value="Brett">Brett</option>
             <option value="Sayre">Sayre</option>
-      </select>
-        
-        
-        <select name="outlets">
+      </select> 
+      <td>  <select id="Status">
+            <option value="Research"> Research</option>
+            <option value="Status">Status</option>
+            <option value="Written">Written</option>
+            <option value="Edited" >Edited</option>
+            <option value="Record">Record/option>
+            
+        </select></td>
+     <td>  <select id="outlets">
             <option value="outlets">Outlets</option>
             <option value="NPR">NPR</option>
             <option value="KQUD" >KQUED</option>
             <option value="Huffington Post">HuffPo</option>
             <option value="National Geographic"> NatGeo</option>
-        </select>
-        <input type="button" value="add"/>
-<p></p>
-    <input type="submit" value="Send to News Room">
+        </select></td>
+      <td> <input type="button" value="add"/> </td> 
+</tr> 
+<tr>
+  <td width="450">
+    <input type="submit" value="Send to News Room"/> 
+  </td>
+ </tr>
+</table> 
+
+</table>
 </form>
-    
-</div>    
 </body>
 
 </html>
+
+
+
+

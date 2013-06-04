@@ -37,8 +37,8 @@ def form():
 
 @app.route("/submit", methods=['POST'])
 def submission():
-	mail("applab@youthradio.org", "Daily List Test", render_template('response.html'))
-	return render_template('response.html')
+    mail("applab@youthradio.org", "Daily List Test", render_template('dailylist2.html'))
+    return render_template('response.html')
 
 
 
