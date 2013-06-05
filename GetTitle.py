@@ -15,8 +15,9 @@ class MyHTMLParser(HTMLParser):
     	if self.get_starttag_text() == "<title>":
         	print "Encountered some data  :", data
 
-
-response = urllib2.urlopen('http://thecnnfreedomproject.blogs.cnn.com/2013/02/12/bras-offers-lifeline-to-rescued-slaves/?hpt=hp_c2')
+opener = urllib2.build_opener()
+opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:17.0) Gecko/20100101 Firefox/17.0')]
+response = opener.open('http://www.cnn.com/2013/06/04/health/sunscreen-aging/index.html?hpt=hp_t1')
 html = response.read()
 
 # instantiate the parser and fed it some HTML
