@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEBase import MIMEBase
@@ -37,8 +37,8 @@ def form():
 
 @app.route("/submit", methods=['POST'])
 def submission():
-    mail("applab@youthradio.org", "Daily List Test", render_template('dailylist2.html'))
-    return render_template('response.html')
+    mail("applab@youthradio.org", "Daily List Test", render_template('dailylist2.html', form=request.form))
+    return render_template('dailylist2.html', form=request.form)
 
 
 

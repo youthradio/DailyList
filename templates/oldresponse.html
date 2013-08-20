@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title> Rebecca's Daily List </title>
+<style>
+
+body {background-color:#E8E8E8;}
+
+div.header
+{position:absolute;
+left: 30 px;
+width:630px;
+height: 100px;
+padding:10px;
+border:3px white;
+margin:1px;
+background-color: white;
+}
+div.pic{
+	position:absolute;
+	left: 10px;
+}
+div.left 
+{position:absolute;
+top:150px;
+width:250px;
+height: 400px;
+padding:10px;
+border:3px white;
+margin:1px;
+background-color: white;
+}
+
+h1 {position:absolute;
+	left: 120px;
+	top: -15px; }
+
+h2 {position:absolute;
+	left: 120px;
+	top: 30px; }
+
+div.right
+{
+position:absolute;
+left:290px;
+top:150px;
+width:350px;
+height: 700px;
+padding:10px;
+border:3px white;
+margin:1px;
+background-color: white;
+}
+
+
+h1 { 
+font-size:30px;
+}
+
+h2 { 
+font-size:20px;
+}
+
+div.red{
+color:white;
+background-color: #980000 ;
+margin:1px;
+}
+
+div.outline{
+border:2px solid gray;
+width:50%;
+height: -10px; 
+color:grey;
+text-align: center;
+
+}
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+    <div class="pic">
+    	<img src="http://i1343.photobucket.com/albums/o790/ashalaura/reb2_zpsf2939269.jpg">
+    </div>
+	<h1>Rebecca's Daily List </h1>
+	<h2> April 13th, 2012 </h2> 
+	</div> 
+
+<div class="left">
+		<img src="http://i1343.photobucket.com/albums/o790/ashalaura/News_zps5abdbfb5.png" width="200" height="54">
+
+		{{ request.form['news'] }} 
+	
+		<img src="http://i1343.photobucket.com/albums/o790/ashalaura/Announcements_zpsd6af3034.png" width="200" height="54">
+	
+		{{ request.form['ann'] }} 
+
+ </div>
+
+<div class="right">
+	<div class="outline">
+		<p>Youth Radio </p>
+	</div>
+		{{ request.form['yr'] }} 
+	
+	<div class="outline">
+		<p>All Day Play </p>
+	</div>
+		{{ request.form['adp'] }}
+
+	<div class="outline">
+		<p>Turnstyle</p>
+	</div>
+			{{ request.form['tn'] }}
+
+	<div class="outline">
+		<p>Social Media </p>
+	</div>
+			{{ request.form['sm'] }}
+			
+	<div class="outline">
+		<p>IN PRODUCTION</p>
+	</div>
+<table>
+	<tr>
+		<td> Slug</td>
+		<td> Due </td>
+		<td> Assigned </td>
+		<td> Outlet</td>
+	</tr>
+
+	<tr> 
+	 <td> {{ request.form['story'] }}</td>
+	 <td> {{ request.form['date'] }}</td>
+	 <td> {{ request.form['staff'] }}</td>
+	 <td> {{ request.form['outlets'] }}</td>
+	</tr>
+</table> 
+</div>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-  <title> Newsroom Daily List </title>
+  <title> Daily List </title>
 
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -25,27 +25,27 @@
 <tr>
   <td valign="top" width = "35%" style="border:4px solid #E8E8E8;padding:3px;"> 
        <img src="http://i1343.photobucket.com/albums/o790/ashalaura/News_zps5abdbfb5.png" width="100%">
-    <br> {{ request.form['news'] }} 
+    <br> <input type="text" name="news" style="width:436;border:solid 1px #aacfe4; " /> <input type="button" value="add" id="newsclick"/>
     <img src="http://i1343.photobucket.com/albums/o790/ashalaura/Announcements_zpsd6af3034.png" width="100%">
-    <br> {{ request.form['ann'] }} 
+    <br> <textarea rows="3"  name="ann"></textarea> 
  
   </td> 
 
   <td valign="top" width = "65%" style="border:4px solid #E8E8E8;padding:6px;">
  <strong style= color:#3ebec0> Youth Radio.org </strong> 
-  <BR> {{ request.form['yr'] }} 
+  <BR> <textarea rows="3" cols="32" name="yr"></textarea>
   <br> <strong> Player </strong> 
-  <BR> {{ request.form['player'] }} 
+  <BR> <textarea rows="3" cols="32" name="player"></textarea>
   <br> <strong> Podcast</strong> 
-  <br> {{ request.form['YRP'] }} 
+  <br> <textarea rows="3" cols="32" name="YRP"></textarea>
   <br> <strong style= color:#3ebec0> Turnstyle News </strong>
-  <br> {{ request.form['tn'] }}
+  <br> <textarea rows="3" cols="32" name="tn"></textarea> 
   <br> <strong style= color:#3ebec0> All Day Play </strong> 
-  <br> {{ request.form['adp'] }} 
+  <br> <textarea rows="2"  cols="32" name="adp"> </textarea> 
   <br> <strong style= color:#3ebec0 > Huffington Post </strong> 
-  <br> {{ request.form['HP'] }} 
+  <br> <textarea rows="3" cols="32" name="HP"></textarea>
   <br> <strong style= color:#3ebec0 > Social Media </strong> 
-  <br> {{ request.form['SM'] }} 
+  <br> <textarea rows="3" cols="32" name="SM"></textarea>
    </td>
 </tr>
 
@@ -53,50 +53,50 @@
   <tr width="528">
   <td colspan=2>
   <br> <strong style= color:#3ebec0 > Newsroom </strong> 
-  <br> {{ request.form['nr'] }} 
+  <br> <textarea rows="3" cols="60" name="Nr"></textarea>
  </td>
  <tr> </tr>
  </tr>
  <tr>
   <td>
    <br> <strong style= color:#3ebec0 > Brett </strong>
-  <br> {{ request.form['bm'] }} 
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
   <td> 
   <br> <strong style= color:#3ebec0 > Denise </strong>
-  <br> {{ request.form['dt'] }} 
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
  </tr>
  <tr>
   <td>
   <br> <strong style= color:#3ebec0 > Robyn </strong> 
-  <br> {{ request.form['rg'] }} 
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
   
   <td>
    <br> <strong style= color:#3ebec0 > Ike </strong> 
-  <br> {{ request.form['is'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
  </tr>
  <tr>
   <td>
   <br> <strong style= color:#3ebec0 > Nishat </strong> 
-  <br> {{ request.form['nk'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
   <td>
    <br> <strong style= color:#3ebec0 > Noah </strong> 
-  <br> {{ request.form['nn'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
  </tr>
  <tr>
   <td>
   <br> <strong style= color:#3ebec0 > Teresa </strong>  
-  <br> {{ request.form['tc'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
   <td>
   <br> <strong style= color:#3ebec0 >Chaz </strong>
-  <br> {{ request.form['ch'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
  </tr>
  <tr>
   <td>
   <br> <strong style= color:#3ebec0 >Brandon </strong>
-  <br> {{ request.form['bm'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea></td>
   <td>
   <br> <strong style= color:#3ebec0 >Other </strong>
-  <br> {{ request.form['other'] }} </td>
+  <br> <textarea rows="3" cols="32" name="SM"></textarea>r</td>
  </tr>
 </table> 
 

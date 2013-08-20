@@ -1,0 +1,108 @@
+<!doctype html>
+<head>
+  <title> Daily List </title>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+</head> 
+<body style="background-color:#E8E8E8;padding:3px">
+
+
+<table  bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:3px" width="528"  >
+  <tr>
+    <td rowspan="2"> <img src="http://i1343.photobucket.com/albums/o790/ashalaura/reb2_zpsf2939269.jpg"> </td>
+    <td width="403"> <h2>Rebecca's Daily List</h2></td>
+  <tr>
+    <td width="403">Today's Date </td>    
+  </tr>
+
+</table>
+
+<table  style="background-color:#FFFFFF; border:1px solid #E8E8E8;border-collapse:collapse;" width="528"  >
+  <form action="/submit" method="post">
+<tr>
+  <td valign="top" width = "35%" style="border:4px solid #E8E8E8;padding:3px;"> 
+
+    <img src="http://i1343.photobucket.com/albums/o790/ashalaura/Announcements_zpsd6af3034.png" width="100%">
+    <br> <textarea rows="3"  name="ann"></textarea> 
+    <img src="http://i1343.photobucket.com/albums/o790/ashalaura/News_zps5abdbfb5.png" width="100%">
+    <br> <input type="text" name="news" style="width:436;border:solid 1px #aacfe4; " /> <input type="button" value="add" id="newsclick"/>
+  </td> 
+
+  <td valign="top" width = "65%" style="border:4px solid #E8E8E8;padding:6px;">
+ <strong> Youth Radio </strong> 
+  <BR> <textarea rows="3" cols="32" name="yr"></textarea>
+  <br> <strong> All Day Play </strong> 
+  <br> <textarea rows="2"  cols="32" name="adp"> </textarea>
+  <br> <strong> Turnstyle News </strong> 
+  <br> <textarea rows="3" cols="32" name="tn"></textarea> 
+  <br> <strong> Social Media </strong> 
+    <br> <textarea rows="3" cols="32" name="SM"></textarea>
+
+   </td>
+</tr>
+
+<table bordercolor="#E8E8E8" style="background-color:#FFFFFF;padding:3px" width="528"> 
+  <tr width="528">
+  <td> <strong>In Production</strong> </td>
+</tr>
+
+  <td> <input type="text" name="story" placeholder="Slug"/> </td>
+    <td> <select name="staff" id="staff">
+            <option value="staff">Staff</option>
+            <option value="Asha">Asha</option>
+            <option value="Lisa" >Lissa</option>
+            <option value="Brett">Brett</option>
+            <option value="Sayre">Sayre</option>
+      </select> 
+      <td>  <select name="Status">
+            <option value="Status">Status</option>
+            <option value="Research"> Research</option>
+            <option value="Scripting">Scripting</option>
+            <option value="Edited" >Final Edit</option>
+            <option value="Record">Record</option>
+            <option value="Record">Air</option>
+            
+        </select></td>
+        <td>  <input type="text" name="notes"  placeholder="notes" size="15"> </td>
+     <td>  <input type="text" name="outlets" placeholder="Outlet" size="10"/>
+           
+      </td>
+      <td> <input type="button" value="add" id="addit"> </td> 
+</tr> 
+<tr>
+  <td width="450">
+    <input type="submit" value="Send to News Room"/> 
+  </td>
+ </tr>
+</table> 
+<p id="work"> work </p>
+</table>
+</form>
+
+<p id="storyname"> Story </p>
+
+<input  type="button" value="print me" id="kurt">
+ <p id="test"> Printing Time </p>
+
+<script type="text/javascript">
+  $('#kurt').click(function(){
+    $('#test').text("Changed Text")
+  })
+
+  $('#addit').click(function(){
+    $('#storyname').text($("changed test"))
+  })
+
+  
+</script>
+
+</body>
+
+
+</html>
+
+
+
+
