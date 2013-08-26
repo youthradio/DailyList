@@ -6,6 +6,15 @@ from email.MIMEText import MIMEText
 from email import Encoders
 import os
 
+from datetime import datetime
+now = datetime.now()
+
+current_year = now.year
+current_month = now.month
+current_day = now.day
+
+todaydate = str(now.month) + "/" + str(now.day) + "/" + str(now.year)
+
 gmail_user = "scripts@youthradio.org"
 gmail_pwd = "TrBDXGZ9"
 
@@ -37,8 +46,8 @@ def form():
 
 @app.route("/submit", methods=['POST'])
 def submission():
-    mail("applab@youthradio.org", "Daily List Test", render_template('dailylist2.html', form=request.form))
-    return render_template('dailylist2.html', form=request.form)
+    mail("applab@youthradio.org", "Daily List Test", render_template('response.html', form=request.form, current_date = todaydate ))
+    return render_template('response.html', form=request.form, current_date = todaydate )
 
 
 
