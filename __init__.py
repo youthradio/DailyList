@@ -6,6 +6,7 @@ from email.MIMEText import MIMEText
 from email import Encoders
 import os
 
+import json
 from GetTitle import getPageTitle
 
 from datetime import datetime
@@ -55,7 +56,10 @@ def submission():
 @app.route("/title", methods=['GET'])
 def getTitle():
     title = getPageTitle(request.args.get('url'))
-    return title
+    response = {
+        'Page Title':   title
+    }
+    return json.dumps(response)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5050)
