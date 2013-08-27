@@ -6,6 +6,8 @@ from email.MIMEText import MIMEText
 from email import Encoders
 import os
 
+from GetTitle import getPageTitle
+
 from datetime import datetime
 now = datetime.now()
 
@@ -50,6 +52,10 @@ def submission():
     return render_template('response.html', form=request.form, current_date = todaydate )
 
 
+@app.route("/title", methods=['GET'])
+def getTitle():
+    title = getPageTitle(request.args.get('url'))
+    return title
 
 if __name__ == "__main__":
     app.run(debug=True)
