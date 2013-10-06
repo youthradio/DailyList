@@ -16,7 +16,11 @@ class MyHTMLParser(HTMLParser):
             print "Encountered an end tag :", tag
 
     def handle_data(self, data):
+<<<<<<< HEAD
         if self.get_starttag_text() == "<title>":
+=======
+    	if self.get_starttag_text() == "<title>":
+>>>>>>> cbd84d65a57d717bd9ae6989aa9fe69675928907
             print "Encountered some data  :", data
             self.title = self.title + data
 
@@ -32,9 +36,18 @@ def getPageTitle(url):
     parser = MyHTMLParser()
 
     try:
+<<<<<<< HEAD
         parser.feed(html)
         return parser.title
 
     except HTMLParseError, e:
         # raise e
         print ""
+=======
+    	parser.feed(html)
+        return parser.title
+
+    except HTMLParseError, e:
+    	# raise e
+    	print ""
+>>>>>>> cbd84d65a57d717bd9ae6989aa9fe69675928907
