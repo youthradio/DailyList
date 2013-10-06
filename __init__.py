@@ -7,6 +7,9 @@ from email import Encoders
 import os
 
 from datetime import datetime
+
+from GetTitle import *
+
 now = datetime.now()
 
 current_year = now.year
@@ -46,9 +49,13 @@ def form():
 
 @app.route("/submit", methods=['POST'])
 def submission():
-    mail("applab@youthradio.org", "Daily List Test", render_template('response.html', form=request.form, current_date = todaydate ))
+    mail("applab@youthradio.org", "Daily List Test", render_template('response.html', form=request.form , current_date = todaydate ))
     return render_template('response.html', form=request.form, current_date = todaydate )
 
+@app.route("/getTitle", methods=['GET'])
+def title():
+    pageTitle = getPageTitle(request.args.get('link_url'))
+    return pageTitle
 
 
 if __name__ == "__main__":
